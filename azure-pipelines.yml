@@ -1,8 +1,8 @@
 # Python script
 # Run a Python file or inline script
-  - task: PythonScript@0
-    displayName: 'Run a Python script'
-    inputs:
-      scriptSource: 'filePath'
-      scriptPath: '$(Agent.BuildDirectory)\hello_app\gbworld.py'
+- task: PythonScript@0
+  displayName: 'Run a Python script'
+  inputs:
+    scriptSource: 'filePath'
+    scriptPath: '$(Agent.BuildDirectory)\hello_app\gbworld.py'
 #      arguments: '${{ parameters.my_param }}'
