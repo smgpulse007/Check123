@@ -1,10 +1,8 @@
-steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.6'
-- task: PythonScript@0
-  inputs:
-    scriptSource: 'inline'
-    script: |
-      print('Hello world 1')
-      print('Hello world 2')    
+# Python script
+# Run a Python file or inline script
+  - task: PythonScript@0
+    displayName: 'Run a Python script'
+    inputs:
+      scriptSource: 'filePath'
+      scriptPath: '$(Agent.BuildDirectory)\hello_app\gbworld.py'
+#      arguments: '${{ parameters.my_param }}'
