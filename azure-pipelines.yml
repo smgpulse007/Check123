@@ -19,10 +19,6 @@ jobs:
       Python36:
         python.version: '3.6'
 
-  steps:
-  - task: UsePythonVersion@0
-    inputs:
-      versionSpec: '$(python.version)'
 
 steps:
 - task: UsePythonVersion@0
